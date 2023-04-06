@@ -41,13 +41,13 @@ export class BaseGraphComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.ngZone.runOutsideAngular(() => {
-      console.log(this.baseGraph.nativeElement);
+      //console.log(this.baseGraph.nativeElement);
       // Cytoscape Typings ::  https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/cytoscape/index.d.ts
       // Cytoscape Popper :: https://github.com/cytoscape/cytoscape.js-popper
       var cy = cytoscape({
         container: this.baseGraph.nativeElement,
         elements: this.graphData,
-        autoungrabify: true,
+        //autoungrabify: true,
         boxSelectionEnabled: false,
         layout: {
           name: "elk", //https://js.cytoscape.org/#layouts

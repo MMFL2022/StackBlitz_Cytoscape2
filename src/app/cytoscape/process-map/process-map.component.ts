@@ -168,7 +168,7 @@ export class ProcessMapComponent implements OnInit {
 
   ngOnInit() {
     of(graphData).subscribe(data => {
-      console.log(data);
+      //console.log(data);
       this.data = data;
       this.styles = [
         {
@@ -241,7 +241,7 @@ export class ProcessMapComponent implements OnInit {
             "target-arrow-color": "black",
             "source-arrow-color": "black",
             "border-color": "red",
-            "border-width": "4px"
+            "border-width": "2px"
           }
         }
       ];
@@ -250,7 +250,7 @@ export class ProcessMapComponent implements OnInit {
 }
 
 var makeSvg = memoize(function(ele) {
-  console.log(ele.data("type"));
+  //console.log(ele.data("type"));
   let svg;
 
   if (ele.data("type") === "pipe") {
